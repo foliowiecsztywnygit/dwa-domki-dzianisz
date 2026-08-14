@@ -1,10 +1,24 @@
 import { useEffect, useRef, useState } from 'react';
 import { FadeIn } from '../ui/FadeIn';
 
+const HERO_IMAGES = [
+  '/galeria/IMG-20260729-WA0008.jpg',
+  '/galeria/IMG-20260729-WA0011.jpg',
+  '/galeria/IMG-20260729-WA0014.jpg',
+];
+
 export function Hero() {
   const [offset, setOffset] = useState({ x: 0, y: 0 });
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const rafRef = useRef<number | null>(null);
   const targetRef = useRef({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % HERO_IMAGES.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const update = () => {
@@ -33,16 +47,24 @@ export function Hero() {
 
   return (
     <section className="relative min-h-[80vh] md:h-screen w-full flex flex-col justify-end pb-32 overflow-hidden">
-      {/* Background Image */}
+      {/* Background Images for Slideshow */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 z-0"
         style={{ 
-          backgroundImage: 'url("/galeria/IMG-20260729-WA0008.jpg")',
           transform: `translate3d(${offset.x}px, ${offset.y}px, 0) scale(1.08)`,
           willChange: 'transform',
         }}
       >
-        <div className="absolute inset-0 bg-black/40" />
+        {HERO_IMAGES.map((src, index) => (
+          <div
+            key={src}
+            className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+              index === currentImageIndex ? 'opacity-100 z-0' : 'opacity-0 -z-10'
+            }`}
+            style={{ backgroundImage: `url("${src}")` }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-black/40 z-10" />
       </div>
 
       <div className="container relative z-10 flex flex-col items-center justify-center w-full mt-24">

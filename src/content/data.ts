@@ -29,14 +29,14 @@ export const advantages = [
 
 export const rooms = [
   {
-    id: 'domek-wschodni',
-    name: 'Domek Wschodni',
-    description: 'Przestronny, luksusowy domek w stylu góralskim z widokiem na Giewont i Tatry Zachodnie. Idealny dla rodzin lub grupy przyjaciół, gwarantujący pełną prywatność i komfort na najwyższym poziomie.',
-    capacity: 'Maksymalnie 11 osób',
+    id: 'trzy-domki',
+    name: 'Kompleks Trzech Domków',
+    description: 'Oferujemy trzy identyczne, luksusowe domki w stylu góralskim z bezpośrednim widokiem na Giewont i Tatry Zachodnie. Każdy domek jest w pełni niezależny, co gwarantuje pełną prywatność. To idealne miejsce na wypoczynek w większym gronie, z zachowaniem własnej przestrzeni.',
+    capacity: '11 osób (w każdym domku)',
     amenities: ['3 sypialnie', '2 łazienki', 'Kominek', 'Taras z widokiem', 'Zmywarka', 'Klimatyzacja', 'Grill'],
     image: '/galeria/IMG-20260729-WA0008.jpg', 
     images: [
-      '/galeria/IMG-20260729-WA0008.jpg', // Zewnętrze (Dzień)
+      '/galeria/IMG-20260729-WA0008.jpg', // Zewnętrze (3 domki)
       '/galeria/IMG-20260729-WA0028.jpg', // Salon z kominkiem
       '/galeria/IMG-20260729-WA0025.jpg', // Sypialnia
       '/galeria/IMG-20260729-WA0023.jpg', // Kuchnia
@@ -53,33 +53,7 @@ export const rooms = [
       bathrooms: '2 łazienki z prysznicem i ręcznikami',
       outdoor: 'Taras, balkon, meble ogrodowe, grill, piękny widok na góry'
     }
-  },
-  {
-    id: 'domek-zachodni',
-    name: 'Domek Zachodni',
-    description: 'Przestronny, luksusowy domek w stylu góralskim z widokiem na Giewont i Tatry Zachodnie. Bliźniaczy układ zapewniający idealne warunki do wypoczynku z dala od miejskiego zgiełku.',
-    capacity: 'Maksymalnie 11 osób',
-    amenities: ['3 sypialnie', '2 łazienki', 'Kominek', 'Taras z widokiem', 'Zmywarka', 'Klimatyzacja', 'Grill'],
-    image: '/galeria/IMG-20260729-WA0031.jpg', 
-    images: [
-      '/galeria/IMG-20260729-WA0031.jpg', // Zewnętrze (Noc)
-      '/galeria/IMG-20260729-WA0030.jpg', // Salon / Jadalnia
-      '/galeria/IMG-20260729-WA0026.jpg', // Sypialnia
-      '/galeria/IMG-20260729-WA0022.jpg', // Kuchnia zbliżenie
-      '/galeria/IMG-20260729-WA0021.jpg', // Łazienka 2
-    ],
-    details: {
-      bedrooms: [
-        'Sypialnia nr 1: Łóżko 2-osobowe',
-        'Sypialnia nr 2: Łóżko 2-osobowe + dwa łóżka 1-osobowe',
-        'Sypialnia nr 3: Łóżko 2-osobowe + jedno łóżko 1-osobowe',
-      ],
-      livingRoom: 'Kominek, rozkładana kanapa (dla 2 osób), płaski TV',
-      kitchen: 'Zmywarka, lodówka, płyta indukcyjna, ekspres do kawy, czajnik elektryczny, naczynia, przybory kuchenne',
-      bathrooms: '2 łazienki z prysznicem i ręcznikami',
-      outdoor: 'Taras, balkon, meble ogrodowe, grill, piękny widok na góry'
-    }
-  },
+  }
 ];
 
 export const opinions = [
@@ -130,7 +104,7 @@ export const attractions = [
 export const faqData = [
   {
     question: 'Na ile osób przewidziany jest jeden domek?',
-    answer: 'Każdy z naszych dwóch domków pomieści maksymalnie 11 osób. W domku znajdują się 3 sypialnie oraz rozkładana kanapa w salonie dla 2 osób.',
+    answer: 'Każdy z naszych trzech domków pomieści maksymalnie 11 osób. W domku znajdują się 3 sypialnie oraz rozkładana kanapa w salonie dla 2 osób.',
   },
   {
     question: 'Czy w domkach znajduje się kuchnia?',

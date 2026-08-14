@@ -21,7 +21,7 @@ export function RoomsSection() {
               </h3>
               <div className="prose prose-lg text-foreground-body font-body leading-relaxed max-w-none mb-10">
                 <p>
-                  Oferujemy dwa bliźniacze, niezależne domki w stylu góralskim na wyłączność. Każdy z nich pomieści aż do 11 osób, zapewniając pełen komfort, przestronne sypialnie i strefę Wellness. Zrelaksuj się w ruskiej bani lub podziwiaj Tatry z tarasu.
+                  Oferujemy trzy identyczne, niezależne domki w stylu góralskim na wyłączność. Każdy z nich pomieści aż do 11 osób, zapewniając pełen komfort, przestronne sypialnie i strefę Wellness. Zrelaksuj się w ruskiej bani lub podziwiaj Tatry z tarasu.
                 </p>
               </div>
               <Link to="/domki">

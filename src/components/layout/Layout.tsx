@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
 import { MobileStickyCTA } from './MobileStickyCTA';
+import { FloatingWhatsApp } from '../ui/FloatingWhatsApp';
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
@@ -12,6 +13,7 @@ export function Layout({ children }: { children: ReactNode }) {
       </main>
       <Footer />
       <MobileStickyCTA />
+      <FloatingWhatsApp />
     </div>
   );
 }

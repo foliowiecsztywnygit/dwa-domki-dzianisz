@@ -13,7 +13,7 @@ export function Rooms() {
         <h2 className="text-4xl md:text-5xl font-heading text-brand-green mb-6 uppercase">Nasze Domki</h2>
         <div className="w-24 h-px bg-accent-gold mx-auto mb-6" />
         <p className="text-foreground-body font-body text-lg">
-          Dwa bliźniacze domki zaprojektowane z myślą o najwyższym komforcie.
+          Trzy bliźniacze domki zaprojektowane z myślą o najwyższym komforcie.
           Luksusowe wnętrza, góralski klimat i niezapomniany widok na Giewont.
         </p>
       </FadeIn>

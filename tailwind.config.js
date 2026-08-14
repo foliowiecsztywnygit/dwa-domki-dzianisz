@@ -25,6 +25,8 @@ export default {
           wood: '#8B5A2B', // Warm wood
           'wood-light': '#A67345',
           graphite: '#2D2D2D', // Dark graphite
+          brown: 'var(--color-brand-brown)',
+          'brown-dark': 'var(--color-brand-brown-dark)',
         },
         accent: {
           gold: '#C4A47C', // Luksusowy złoty/mosiężny akcent

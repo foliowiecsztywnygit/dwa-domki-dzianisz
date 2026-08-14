@@ -32,7 +32,7 @@ export default function GalleryPage() {
         <FadeIn className="text-center max-w-2xl mx-auto mb-12">
           <h1 className="text-4xl md:text-5xl font-heading mb-4 text-foreground-heading uppercase">Galeria Zdjęć</h1>
           <p className="text-foreground-body font-body text-lg">
-            Obejrzyj nasze wnętrza i poczuj klimat, jaki panuje w Pokojach u Magdy.
+            Obejrzyj nasze wnętrza i poczuj klimat, jaki panuje w naszych domkach.
           </p>
         </FadeIn>
 

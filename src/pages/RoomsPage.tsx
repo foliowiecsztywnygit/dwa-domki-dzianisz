@@ -6,7 +6,7 @@ export default function DomkiPage() {
     <div className="pt-24">
       <Helmet>
         <title>Nasze Domki | Cicha Przystań Dzianisz</title>
-        <meta name="description" content="Poznaj nasze luksusowe domki w Dzianiszu. Oferujemy dwa bliźniacze domki, z których każdy pomieści do 11 osób. Sprawdź wyposażenie i zarezerwuj swój nocleg z widokiem na Tatry." />
+        <meta name="description" content="Poznaj nasze luksusowe domki w Dzianiszu. Oferujemy trzy bliźniacze domki, z których każdy pomieści do 11 osób. Sprawdź wyposażenie i zarezerwuj swój nocleg z widokiem na Tatry." />
       </Helmet>
       <Rooms />
     </div>

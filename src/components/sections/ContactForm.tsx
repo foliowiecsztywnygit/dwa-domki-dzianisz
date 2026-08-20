@@ -36,7 +36,7 @@ export function ContactForm() {
       const subject = encodeURIComponent(`Zapytanie o nocleg: ${data.name}`);
       const body = encodeURIComponent(buildEmailBody(data));
       
-      window.location.href = `mailto:kontakt@cichaprzystandzianisz.pl?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:cichaprzystandzianisz@gmail.com?subject=${subject}&body=${body}`;
       
       toast.success('Dziękujemy za zapytanie! Otwieramy program pocztowy.', {
         style: {
@@ -74,27 +74,27 @@ export function ContactForm() {
               
               <div className="space-y-4 mt-auto">
                 <a
-                  href="tel:+48508923096"
+                  href="tel:+48602222212"
                   className="flex items-center gap-3 rounded-2xl border border-brand-brown/10 bg-background hover:bg-brand-brown/[0.03] transition-colors px-5 py-4"
                 >
                   <div className="w-10 h-10 rounded-full bg-background-card border border-brand-brown/10 flex items-center justify-center">
                     <Phone className="w-5 h-5 text-brand-brown" />
                   </div>
                   <div>
-                    <div className="text-lg font-ui tracking-wide text-foreground-heading">+48 508 923 096</div>
+                    <div className="text-lg font-ui tracking-wide text-foreground-heading">+48 602 222 212</div>
                     <div className="text-xs text-foreground-body/70">Najszybsza droga do szybkiej rezerwacji</div>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:kontakt@cichaprzystandzianisz.pl"
+                  href="mailto:cichaprzystandzianisz@gmail.com"
                   className="flex items-start gap-4 p-4 rounded-xl border border-brand-green/10 hover:border-brand-green/30 hover:bg-brand-green/5 transition-all group"
                 >
                   <div className="w-10 h-10 rounded-full bg-brand-green/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                     <Mail className="w-5 h-5 text-brand-green" />
                   </div>
                   <div>
-                    <div className="text-sm font-ui tracking-wide text-foreground-heading">kontakt@cichaprzystandzianisz.pl</div>
+                    <div className="text-sm font-ui tracking-wide text-foreground-heading">cichaprzystandzianisz@gmail.com</div>
                     <div className="text-xs text-foreground-body/70">Możesz też wysłać wiadomość bez formularza</div>
                   </div>
                 </a>

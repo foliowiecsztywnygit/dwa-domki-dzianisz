@@ -30,7 +30,7 @@ export function Footer() {
             <p>34-514 Dzianisz</p>
             <a href="tel:+48602222212" className="block mt-4 hover:text-accent-gold transition-colors text-lg text-white">602 222 212</a>
             <p className="text-xs mt-1 text-white/60">Czynne całą dobę</p>
-            <a href="mailto:kontakt@cichaprzystandzianisz.pl" className="block hover:text-accent-gold transition-colors mt-2">kontakt@cichaprzystandzianisz.pl</a>
+            <a href="mailto:cichaprzystandzianisz@gmail.com" className="block hover:text-accent-gold transition-colors mt-2">cichaprzystandzianisz@gmail.com</a>
           </div>
         </div>
 

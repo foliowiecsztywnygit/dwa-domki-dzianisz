@@ -23,31 +23,39 @@ export default function BlogPage() {
         </FadeIn>
 
         {/* Posts Grid */}
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post) => (
-            <StaggerItem key={post.id} className="h-full">
-              <Card hover className="flex flex-col h-full border-none shadow-sm">
-                <Link to={`/blog/${post.slug}`} className="flex flex-col h-full group">
-                  <div className="relative h-48 overflow-hidden rounded-t-lg">
-                    <AppImage 
-                      src={post.image || ""} 
-                      alt={post.title} 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      fallbackSrc="/images/placeholders/landscape.svg"
-                    />
-                  </div>
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-heading mb-3 text-foreground-heading uppercase group-hover:text-accent-yellow transition-colors">{post.title}</h3>
-                    <p className="text-foreground-body font-body mb-4 flex-grow">{post.description || post.excerpt}</p>
-                    <div className="text-sm text-foreground-body/70 font-body mt-auto">
-                      {post.date}
+        {blogPosts.length > 0 ? (
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogPosts.map((post) => (
+              <StaggerItem key={post.id} className="h-full">
+                <Card hover className="flex flex-col h-full border-none shadow-sm">
+                  <Link to={`/blog/${post.slug}`} className="flex flex-col h-full group">
+                    <div className="relative h-48 overflow-hidden rounded-t-lg">
+                      <AppImage 
+                        src={post.image || ""} 
+                        alt={post.title} 
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        fallbackSrc="/images/placeholders/landscape.svg"
+                      />
                     </div>
-                  </div>
-                </Link>
-              </Card>
-            </StaggerItem>
-          ))}
-        </StaggerContainer>
+                    <div className="p-6 flex flex-col flex-grow">
+                      <h3 className="text-xl font-heading mb-3 text-foreground-heading uppercase group-hover:text-accent-yellow transition-colors">{post.title}</h3>
+                      <p className="text-foreground-body font-body mb-4 flex-grow">{post.description || post.excerpt}</p>
+                      <div className="text-sm text-foreground-body/70 font-body mt-auto">
+                        {post.date}
+                      </div>
+                    </div>
+                  </Link>
+                </Card>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
+        ) : (
+          <div className="text-center py-12">
+            <p className="text-foreground-body font-body text-xl">
+              Obecnie nie ma żadnych wpisów na blogu. Wkrótce pojawią się tu nowe artykuły!
+            </p>
+          </div>
+        )}
       </Section>
     </div>
   );
